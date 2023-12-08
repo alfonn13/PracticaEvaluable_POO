@@ -1,0 +1,66 @@
+body{
+    background: rgb(33,150,243);
+    background: linear-gradient(90deg, rgba(33,150,243,1) 0%, rgba(9,9,121,1) 97%); 
+    color: black; 
+    display: grid; 
+    height: 100vh;
+    place-content: center;
+}
+.login{
+    width: 500px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-wrapper{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.input-wrapper input:focus::placeholder{
+    color: transparent;
+}
+
+.input-wrapper input{
+    border: none;
+    width: 100%;
+}
+
+.input-wrapper input:focus{
+    outline: none;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.eye-button{
+    cursor: pointer;
+}
+
+.login-button{
+    width: 150px;
+    height: 50px;
+    background: rgb(33,150,243);
+    background: linear-gradient(90deg, rgba(33,150,243,1) 0%, rgba(41,41,163,1) 100%);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+
+}
+
