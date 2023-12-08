@@ -1,0 +1,299 @@
+/* Palta de colores para contenido principal */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/RobotoSlab-VariableFont_wght.ttf) format("truetype");
+}
+  
+body {
+    background-image: url('../assets/img/imagenFondo.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Roboto;
+}
+  
+.search-result{
+    background-color: #dcdcdc;
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    width: 650px;
+    margin: 20px auto;
+
+
+}
+
+.visibilidad{
+    display: block;
+}
+  
+
+.nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* Divide en tres columnas */
+    align-items: center;
+    padding:  20px 50px ;
+}
+  
+.logo-bmw img {
+    width: 100px;
+    height: 100px;
+    animation: rotate 5s linear infinite;
+}
+  
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    text-align: center;
+    padding: 10px 20px;
+}
+  
+.gestion-inventario {
+    text-align: center;
+    color: #fff;
+}
+  
+.menu-bar {
+    text-align: right;
+}
+  
+.hamburger-icon {
+    
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+}
+  
+.hamburger-icon:hover {
+    cursor: pointer;
+}
+  
+.hamburger-icon.active {
+    opacity: 0;
+}
+  
+.active {
+    display: block;
+}
+  
+.log-out-link {
+    color: #333;
+    text-decoration: none;
+}
+  
+@media screen and (max-width: 768px) {
+    
+    .menu-bar {
+      display: block;
+    }
+  
+    .menu-dropdown {
+      display: none;
+      text-align: right;
+    }
+}
+
+h1{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 26ch;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    border-right: 2px solid black;
+
+    animation: typing 3s steps(18) alternate infinite,
+                blink .5s linear infinite;
+}
+
+body.dark h1{
+    border-color: var(--lightGreyHover);
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.logo-container img {
+    margin-right: 10px; /* Ajusta según sea necesario */
+}
+  
+  
+.container {
+    background-color: #dcdcdc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 650px;
+    margin:0 auto;
+}
+  
+  
+#busquedaBtn {
+    background: black;
+    color: white;
+}
+  
+.product-form-styles {
+    background-color: #dcdcdc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 650px;
+    margin: 0 auto;
+}
+  
+.product-form-styles label {
+    display: block;
+    margin-bottom: 8px;
+}
+  
+.product-form-styles input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.product-form-styles button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    font-family: Roboto;
+    cursor: pointer;
+    padding: 10px;
+}
+  
+.inventory-table-styles {
+    border: 3px solid #ccc;
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+    margin: 45px auto;
+    color: white;
+    width: 50%; /* Puedes ajustar el ancho de la tabla según tus necesidades */
+}
+  
+.inventory-table-styles td,
+.inventory-table-styles th {
+    border: 3px solid #ccc;
+    padding: 25px; /* Ajusta según sea necesario para aumentar el espacio */
+}
+  
+.edit-button{
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+  
+.delete-button{
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 7px;
+}
+  
+h1{
+    color: white;
+    font-size: 30px;
+}
+  
+.buttonSearch{
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+  
+.inputSearch{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.h1Form{
+    color:black;
+    font-size: 25px;
+    /*padding-bottom: 10px;*/
+    text-align: center;
+}
+  
+.inputInventory{
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.legend{
+    text-align: center;
+}
+
+.legend::before {
+    content: "📢 "; 
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.buscador{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

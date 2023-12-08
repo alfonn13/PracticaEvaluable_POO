@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de inventario</title>
+    <!--Utilizo modal de BootStrap para utilizar los estilos correpsondientes-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Enlace para la hoja de estilos-->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!--Enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo-bmw">
+      <img src="/assets/img/bmw.webp" alt="logo farmacia" width="100px" height="100px">
+    </div>
+    <div class="gestion-inventario">
+      <h1 class="titleh1">Inventario Tienda BMW</h1>
+    </div>
+    <div class="menu-bar" id="menu-icon">
+      <img src="/assets/img/menu-de-hamburguesas.png" class="hamburger-icon" alt="hamburguesa">
+    </div>
+    <!-- Añado el contenedor para el menú desplegable -->
+    <div class="menu-dropdown" id="menu-dropdown">
+      <a href="#" id="log-out-link" class="log-out-link">Log Out</a>    
+    </div>
+</nav>
+    
+    
+    <form id="product-form-events" class="product-form-styles">
+      
+      <fieldset> 
+        <div class="searchBarContainer flex">
+          <input id="searchInput" type="text" class="inputSearch" placeholder="Indica el nombre del producto">
+            <button id="search-button" class="buttonSearch" >Buscar</button>
+        </div>
+        <legend class="legend" >Formulario para insertar producto</legend>
+        <label for="product-name">Nombre</label>
+        <input type="text" id="product-name" placeholder="Nombre producto">
+        <label for="product-quantity">Cantidad</label>
+        <input type="number" id="product-quantity" placeholder="Cantidad">
+        <label for="product-price">Precio</label>
+        <input type="number" step="0.01" id="product-price" placeholder="Precio">
+        <button type="submit" class="addBtn" id="addBtn">Agregar Producto</button>
+      </fieldset> 
+    </form>
+       
+    <div class="container-result">
+      
+      <span id="searchResult" class="search-result" style="view-transition-name: searchResult;"> 
+      </span>
+    </div>
+
+    
+    <table id="inventory-table-events" class="inventory-table-styles">
+        <tr id="data-row">
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+    <table id="search-results-table" class="inventory-table-styles" style="display: none;">
+      <tr>
+          <th>Nombre</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+      </tr>
+      <tbody id="search-results-body"></tbody>
+  </table>
+        
+    <script src="../scripts/main.js" type="module"></script>
+    
+</body>
+</html>
