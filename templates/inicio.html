@@ -28,6 +28,7 @@
     </div>
 </nav>
     
+    <!--Formulario para insertar Productos-->
     <form id="product-form-events" class="product-form-styles">
       <div class="searchBarContainer flex">
           <input id="searchInput" type="text" class="inputSearch" placeholder="Indica el nombre del producto">
@@ -48,6 +49,7 @@
       <span id="searchResult" class="search-result" style="view-transition-name: searchResult;"></span>
     </div>
 
+    <!--Tabla para mostrar los productos-->
     <table id="inventory-table-events" class="inventory-table-styles">
         <tr id="data-row">
             <th>Nombre</th>
@@ -58,16 +60,7 @@
         <tbody id="tbody"></tbody>
     </table>
 
-    <table id="search-results-table" class="inventory-table-styles" style="display: none;">
-      <tr>
-          <th>Nombre</th>
-          <th>Cantidad</th>
-          <th>Precio</th>
-      </tr>
-      <tbody id="search-results-body"></tbody>
-  </table>
-        
-  <script src="../scripts/main.js" type="module"></script>
+    <script src="../scripts/main.js" type="module"></script>
     
 </body>
 </html>
