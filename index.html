@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Inventario BMW</title>
+    <!--Enlace para la hoja de estilos-->
+    <link rel="stylesheet" href="styles/inicio.css">
+    <!--Enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--Login antes de entrar en el inventario-->
+    <div class="login">
+        <h1>Login</h1>
+        <div class="input-wrapper">
+            <img src="/assets/img/email.png" alt="email" width="30px">
+            <input type="text" placeholder="Ingrese tu Usuario" id="user" required>
+        </div>
+
+        <div class="input-wrapper">
+            <img src="/assets/img/password.png" alt="password" width="30px">
+            <input type="password" placeholder="Ingrese tu Contraseña" id="password" required>
+            <img src="/assets/img/eye-open.png" alt="password" width="30px" id="eye-open" class="eye-button">
+            <img src="/assets/img/eye-close.png" alt="password" width="30px" id="eye-close" class="eye-button hidden" >
+        </div>
+
+        <div class="button">
+            <button class="login-button" id="login-button">Login Now</button>
+        </div>
+    </div>
+
+    <!-- Enlace al script para el ojo de la contraseña y para cambiar de pantalla (Gestion de Inventario)
+    cuando la contraseña sea la correcta -->
+    <script src="/scripts/showpassword.js" type="module"></script>
+</body>
+</html>
