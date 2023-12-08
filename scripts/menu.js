@@ -11,7 +11,8 @@ export function toggleMenu() {
 export function redirectToIndex() {
     document.location.href = "../index.html";
 }
-  
+
+//AddEvenListener para que cuando pulsemos en el menu se nos despliegue el menu
 menuIcon.addEventListener("click", toggleMenu);
 logout.addEventListener("click", redirectToIndex);
   
