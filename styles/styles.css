@@ -120,9 +120,6 @@ h1{
                 blink .5s linear infinite;
 }
 
-body.dark h1{
-    border-color: var(--lightGreyHover);
-}
 
 @keyframes typing{
     from{
@@ -203,13 +200,13 @@ body.dark h1{
     align-items: center;
     margin: 45px auto;
     color: white;
-    width: 50%; /* Puedes ajustar el ancho de la tabla según tus necesidades */
+    width: 50%; 
 }
   
 .inventory-table-styles td,
 .inventory-table-styles th {
     border: 3px solid #ccc;
-    padding: 25px; /* Ajusta según sea necesario para aumentar el espacio */
+    padding: 25px; 
 }
   
 .edit-button{
@@ -263,7 +260,6 @@ h1{
 .h1Form{
     color:black;
     font-size: 25px;
-    /*padding-bottom: 10px;*/
     text-align: center;
 }
   
@@ -282,6 +278,12 @@ h1{
 }
 
 .legend::before {
+    content: "📢 "; 
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.legend::after {
     content: "📢 "; 
     font-size: 1.2em;
     margin-right: 5px;
